@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      'mongodb+srv://aaquibm502:Aaquib%40123@cluster0.zkrl98d.mongodb.net/tes'
+      'mongodb+srv://aaquibm502:Aaquib123@cluster0.jidua.mongodb.net/Proshop?retryWrites=true&w=majority&appName=Cluster0'
     );
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
