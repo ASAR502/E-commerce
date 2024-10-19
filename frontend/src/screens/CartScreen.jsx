@@ -12,6 +12,7 @@ import {
 import { FaTrash } from 'react-icons/fa';
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../slices/cartSlice';
+import React from 'react';
 
 const CartScreen = () => {
   const navigate = useNavigate();

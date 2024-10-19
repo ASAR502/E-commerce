@@ -9,6 +9,7 @@ import Loader from '../components/Loader';
 import { useCreateOrderMutation } from '../slices/ordersApiSlice';
 import { clearCartItems } from '../slices/cartSlice';
 
+
 const PlaceOrderScreen = () => {
   const navigate = useNavigate();
 

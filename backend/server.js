@@ -8,13 +8,23 @@ import productRoutes from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+import cors from 'cors';
+
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+
+const app = express();
+app.use(cors());
+
+app.use(cors({
+    origin: '*',  
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
+}));
 
 const port = process.env.PORT || 8000;
 
 connectDB();
 
-const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -8,6 +8,7 @@ import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
 import logo from '../assets/logo.png';
 import { resetCart } from '../slices/cartSlice';
+import React from 'react';
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
