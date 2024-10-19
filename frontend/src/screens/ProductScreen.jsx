@@ -21,6 +21,7 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Meta from '../components/Meta';
 import { addToCart } from '../slices/cartSlice';
+import React from 'react';
 
 const ProductScreen = () => {
   const { id: productId } = useParams();
